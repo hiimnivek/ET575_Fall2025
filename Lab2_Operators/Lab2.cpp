@@ -1,5 +1,5 @@
 /* 
-Student's full name
+Kevin Huang
 Lab 2, operators
 Sept 3, 2025
 */
