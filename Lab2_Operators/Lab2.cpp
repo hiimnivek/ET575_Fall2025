@@ -57,5 +57,37 @@ int main(){
     cout<<"Is number1 less than number2 "<<(number1 < number2)<<endl;
     cout<<"Is number1 not equal to number2? "<<(number1 != number2)<<endl;
 
+        cout<<"\n------- example 4: logical operator ------"<<endl;
+    // And operator
+    bool check_numbers = (number1 != number2) && (number1 < number2) && (number1>5);
+    // number1 != number2 ---> true
+    // number1 < number 2 ---> true
+    // number 1 > 5 ---> false
+    // check_numbers = true && true && false = false
+    cout<<"The result of check_number is "<<check_numbers<<endl;
+
+    // OR operator
+    bool check_or = (number2 > 10) || (number2 != 3) || (number2 <number1);
+    //number2 > 10 --> false
+    //number2 !=3 --> true
+    //number2<number1 --> false
+    // flase || true || false = true
+    cout<<"The result of check_number is "<<check_or<<endl;
+
+    cout<<"\n ------- example 5: casting -------"<<endl;
+    int n = 5;
+    float m = n/2.0; 
+
+    cout<<"implicit casting = "<<m<<endl;
+    return 0;
+
+    cout<<\n------ Exercise -------"<<endl;
+    cout<<"Enter the first number (a): ";
+    cin>>a;
+    cout<<"Enter the second number (b): ";
+    cin>>b;  
+    a + b = 
+    cout<<"
+
     return 0;
 }
