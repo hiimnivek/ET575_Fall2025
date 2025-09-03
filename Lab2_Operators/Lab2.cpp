@@ -81,7 +81,7 @@ int main(){
     cout<<"implicit casting = "<<m<<endl;
     return 0;
 
-    cout<<\n------ Exercise -------"<<endl;
+    cout<<\"n------ Exercise -------"<<endl;
     cout<<"Enter the first number (a): ";
     cin>>a;
     cout<<"Enter the second number (b): ";
