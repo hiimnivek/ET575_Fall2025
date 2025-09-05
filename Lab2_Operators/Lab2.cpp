@@ -104,7 +104,7 @@ int main(){
     cout<<"a = "<<a<<endl;
     cout<<"b = "<<b<<endl;
 
-    cout<<"Boolean Operations: "<<endl;
+    cout<<"\nBoolean Operations: "<<endl;
     cout<<"Is a greater than b? "<<((a > b) ? "true" : "false")<<endl; 
     cout<<"Is a equal to b? "<<((a == b) ? "true" : "false")<<endl;
     cout<<"Is a not equal to b? "<<((a =! b) ? "true" : "false")<<endl;
