@@ -59,10 +59,14 @@ int main (){
     string word;
     cout<<"Enter a message = "<<word<<endl;
     cin>>word;
-    cout<<"2nd character: "<<word[2]<<endl;
-    cout<<"word has: "<<word.length()<<endl;
+    //I used the word "College"
+    cout<<"2nd character: "<<word[1]<<endl;
+    int words = word.length();
+    cout<<"word has: "<<words<<" characters"<<endl;
     cout<<"Replace word: "<<word.replace(2,2, "--$--")<<endl;
-    cout<<"Remove end characters: "<<word.substr(-1,3)<<endl;
-    cout<<"Hello";
+    cout<<"Remove end characters: "<<word.substr(7,3)<<endl;
+    //I didn't know how to refer to the last character of ANY word/message so I had to manually count the amount of characters in the word "College" so I could refer to the index and remove the last 3 characters
+    //Let's say I typed the word Colleges, then the last three letters would still be "ege"  instead of "ges". How can refer to the last index of any word/message and remove the last 3 characters more efficently?
+    
     return 0;
 }
