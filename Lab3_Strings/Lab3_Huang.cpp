@@ -62,7 +62,7 @@ int main (){
     cout<<"2nd character: "<<word[2]<<endl;
     cout<<"word has: "<<word.length()<<endl;
     cout<<"Replace word: "<<word.replace(2,2, "--$--")<<endl;
-    cout<<"Remove end characters: "<<word.substr(7,3)<<endl;
+    cout<<"Remove end characters: "<<word.substr(-1,3)<<endl;
     cout<<"Hello";
     return 0;
 }
