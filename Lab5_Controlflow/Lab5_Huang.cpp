@@ -3,6 +3,7 @@ Kevin Huang
 Lab 5, Control flow
 Sep 10, 2025
 */
+<<<<<<< HEAD
 #include<iostream>
 #include<string>
 
@@ -109,3 +110,6 @@ int main (){
 
     return 0;
 }
+=======
+#include<iostream>
+>>>>>>> cd1afe3fef966e649cf1c6a08e12e34223da9f6d
