@@ -83,10 +83,10 @@ int main (){
     cout<<"Enter your final exam grade: ";
     cin>>final_exam;
 
-    cout<<"Enter your lab grades: ";
+    cout<<"Enter your lab grade: ";
     cin>>labs;
 
-    cout<<"Enter your homework grades: ";
+    cout<<"Enter your homework grade: ";
     cin>>homework;
 
     int grade = final_exam*0.5 + labs*0.3 + homework*0.2;
