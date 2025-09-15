@@ -129,19 +129,20 @@ int main (){
     }
     else if (income>=200000 && income<=500000){
         cout<<"Apartment or co-op";
-        if (income>=200000 && income<=300000)
+    }
+    else if (income>=200000 && income<=300000){
         cout<<"\nStudio";
-        else if (income>=300001 && income<=400000)
-        cout<<"\n1 BR + 1 Bath";
+        if (income>=300001 && income<=400000)
+        cout<<"\nWith $"<<income<<" you can afford a studio with 1 BR + 1 Bath";
         else (income>=400001 && income<=500000);
-        cout<<"\n2 BRs + 1 Bath";
+        cout<<"\nWith $"<<income<<" you can afford a studio with 2 BRs + 1 Bath";
     }
     else if (income>=500001 && income<=1000000){
         cout<<"House";
         if(income>=500001 && income<=700000)
-        cout<<"\n2 BRs + 2 Baths";
+        cout<<"\nWith $"<<income<<" you can afford a house with2 BRs + 2 Baths";
         else(income>700001 && income<=1000000);
-        cout<<"\n3 BRs + 3 Baths";
+        cout<<"\nWith $"<<income<<" you can afford a house with 3 BRs + 3 Baths";
     }
     else if (income>1000001){
         cout<<"Mansion";
