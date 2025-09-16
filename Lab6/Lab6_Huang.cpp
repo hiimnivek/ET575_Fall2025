@@ -120,7 +120,8 @@ int main (){
         break;
     }
 
-    cout<<"\n ----- Exercise ----- "<<endl;
+
+    cout<<"\n ----- Exercise 1 ----- "<<endl;
     int income;
     cout<<"Enter how much savings you have: $"<<endl;
     cin>>income;
@@ -128,29 +129,50 @@ int main (){
         cout<<"Keep saving!";
     }
     else if (income>=200000 && income<=500000){
-        cout<<"Apartment or co-op";
+        cout<<"With $"<<income<<" you can afford an apartment or co-op";
     }
     else if (income>=200000 && income<=300000){
-        cout<<"\nStudio";
+        cout<<"With $"<<income<<" you can afford a Studio";
         if (income>=300001 && income<=400000)
-        cout<<"\nWith $"<<income<<" you can afford a studio with 1 BR + 1 Bath";
+        cout<<"With $"<<income<<" you can afford a studio with 1 bedroom + 1 bathroom";
         else (income>=400001 && income<=500000);
-        cout<<"\nWith $"<<income<<" you can afford a studio with 2 BRs + 1 Bath";
+        cout<<"With $"<<income<<" you can afford a studio with 2 bedrooms + 1 bathroom";
     }
     else if (income>=500001 && income<=1000000){
         cout<<"House";
         if(income>=500001 && income<=700000)
-        cout<<"\nWith $"<<income<<" you can afford a house with2 BRs + 2 Baths";
+        cout<<"With $"<<income<<" you can afford a house with 2 bedrooms + 2 bathrooms";
         else(income>700001 && income<=1000000);
-        cout<<"\nWith $"<<income<<" you can afford a house with 3 BRs + 3 Baths";
+        cout<<"With $"<<income<<" you can afford a house with 3 bedrooms + 3 bathrooms";
     }
     else if (income>1000001){
-        cout<<"Mansion";
+        cout<<"With $"<<income<<" you can afford a Mansion";
     }
     else {
         cout<<"Have some savings";
     }
 
+
+    cout<<"\n\n ----- Exercise 2 ----- "<<endl;
+    int num;
+    cout<<"Enter a random number: "<<endl;
+    cin>>num;
+    char doubled = ' ';
+    cout<<"Would you like to double your number? Enter N or n for no, or Y or y for yes."<<endl;
+    cin>>doubled;
+
+    switch (doubled)
+    {
+    case 'n': case 'N':
+        cout<<"The number "<<num<<" stayed the same."<<endl;
+        break;
+    case 'y': case 'Y':
+        cout<<"The number: "<<num<<" has doubled and is set to "<<num*2<<"."<<endl;
+        break;
+    default:
+        cout<<"Invalid input but the number: "<<num<<", stayed the same."<<endl;
+        break;
+    }
 
     return 0;
 }
