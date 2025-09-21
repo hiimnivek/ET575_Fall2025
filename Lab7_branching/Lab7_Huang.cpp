@@ -12,9 +12,9 @@ using namespace std;
 int main (){
     cout<<"\n ------ Exercise ------ "<<endl;
     float num1, num2;
-    cout<<"\nEnter your first number: "<<endl;
+    cout<<"\nEnter your first number: ";
     cin>>num1;
-    cout<<"\nEnter your second number: "<<endl;
+    cout<<"\nEnter your second number: ";
     cin>>num2;
 
     cout<<"\nChoose an operation by entering one of the following characters:"<<endl;
@@ -25,43 +25,43 @@ int main (){
     cout<<"/ for division"<<endl;
     cout<<"'%' for modulus, which returns the remainder of the division"<<endl;
     cout<<"q or Q to quit the program"<<endl;
-    cout<<"Enter your operation(+,-,*,/,%,q or Q): ";
+    cout<<"\nEnter your operation(+,-,*,/,%,q or Q): ";
     cin>>operation;
 
     switch (operation)
     {
     case '+':
-        cout<<""<<num1<<" + "<<num2<<" = "<<num1+num2<<""<<endl;
+        cout<<"\n"<<num1<<" + "<<num2<<" = "<<num1+num2<<""<<endl;
         break;
     case '-':
-        cout<<""<<num1<<" - "<<num2<<" = "<<num1-num2<<""<<endl;
+        cout<<"\n"<<num1<<" - "<<num2<<" = "<<num1-num2<<""<<endl;
         break;
     case '*':
-        cout<<""<<num1<<" * "<<num2<<" = "<<num1*num2<<""<<endl;
+        cout<<"\n"<<num1<<" * "<<num2<<" = "<<num1*num2<<""<<endl;
         break;  
     case '/':
         if(num2 != 0){
-        cout<<""<<num1<<" / "<<num2<<" = "<<num1/num2<<""<<endl;
+        cout<<"\n"<<num1<<" / "<<num2<<" = "<<num1/num2<<""<<endl;
         }
             else {
-            cout<<""<<num1<<" divided by 0 is 0"<<endl;
+            cout<<"\n"<<num1<<" divided by 0 is 0"<<endl;
             }
         break;
     case '%':
         if(num2 != 0){
         int number1 = float(num1);
         int number2 = float(num2);
-        cout<<""<<number1<<" % "<<number2<<" = "<<number1%number2<<""<<endl;
+        cout<<"\n"<<number1<<" % "<<number2<<" = "<<number1%number2<<""<<endl;
         }
             else {
-            cout<<"ERROR: "<<num1<<" '%' 0 is UNDEFINED"<<endl;
+            cout<<"\nERROR: "<<num1<<" '%' 0 is UNDEFINED"<<endl;
             }
         break;
     case 'q': case 'Q':
-        cout<<"You have quit the program"<<endl;
+        cout<<"\nYou have quit the program"<<endl;
         break;
     default:
-        cout<<"ERROR: Invalid input"<<endl;
+        cout<<"\nERROR: Invalid input"<<endl;
     }
 
 return 0;
