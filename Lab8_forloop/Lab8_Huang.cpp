@@ -69,8 +69,7 @@ int main (){
     for (int y=-21; y<=21; y++){
         if(y%5==0 && y!=0){
             cout<<y<<endl;
-            //NEED TO FIX THIS PART
-            multiple_count += y;
+            multiple_count += y%2==0;
         }
     }
     cout<<" multiple count is "<<multiple_count<<""<<endl;
