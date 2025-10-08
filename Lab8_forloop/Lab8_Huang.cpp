@@ -80,22 +80,8 @@ int main (){
     cout<<"Enter a start number: ";
     cin>>user_input;
     for (user_input; user_input<=30; user_input += 4){
-        if(user_input%4==0 && user_input!=0){
-        cout<<user_input<<endl;
+        cout<<user_input<<endl;    
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     return 0;
