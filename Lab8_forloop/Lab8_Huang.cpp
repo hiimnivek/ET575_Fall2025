@@ -66,19 +66,20 @@ int main (){
 
     cout<<"\n ------ EXERCISE 1------"<<endl;
     int multiple_count = 0;
-    for (int y=-21; y<=21; y++){
-        if(y%5==0 && y!=0){
-            cout<<y<<endl;
-            multiple_count += y%2==0;
+    for (int y=21; y>=-21; y-=5){
+         cout<<y<<endl;
+        if(y%2==0 && y!=0){
+           
+            multiple_count += 1;
         }
     }
-    cout<<" multiple count is "<<multiple_count<<""<<endl;
+    cout<<"Multiple count of 2 for y is "<<multiple_count<<""<<endl;
 
     cout<<"\n ------ EXERCISE 2------"<<endl;
     int user_input = 0;
     cout<<"Enter a start number: ";
     cin>>user_input;
-    for (user_input; user_input<=30; user_input++){
+    for (user_input; user_input<=30; user_input += 4){
         if(user_input%4==0 && user_input!=0){
         cout<<user_input<<endl;
     }
