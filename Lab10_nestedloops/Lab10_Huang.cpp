@@ -79,7 +79,7 @@ int main(){
 
 
     cout<<"\n------ Exercise B ------"<<endl;
-    i=1;
+    i=6;
     int add=0;
     while(i<=10){
         i++;
