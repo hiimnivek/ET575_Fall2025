@@ -34,3 +34,11 @@ float hyp(float side1, float side2){
 void printhyp(float s1, float s2, float h){
     cout<<"The hypotenuse of side "<<s1<<" and "<<s2<<" is "<<h<<endl;
 }
+
+//EXERCISE
+
+// function to collect a number greater than 0
+
+// function to calculate the distance of four point
+
+//function to print the result

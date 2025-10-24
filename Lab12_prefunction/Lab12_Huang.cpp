@@ -30,6 +30,15 @@ int main(){
     printhyp(s1,s2,h);
 
     cout<<"\n----- Exercise ------"<<endl;
-    
+    int x1 = //call 1st function
+    int y1 = //call 1st function
+    int x2 = //call 1st function
+    int y2 = //call 1st function
+
+    float d = //call the 2nd function
+
+    //call the 3rd function
+
+
     return 0;
 }
