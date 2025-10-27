@@ -30,15 +30,15 @@ int main(){
     printhyp(s1,s2,h);
 
     cout<<"\n----- Exercise ------"<<endl;
-    int x1 = //call 1st function
-    int y1 = //call 1st function
-    int x2 = //call 1st function
-    int y2 = //call 1st function
+    int x1 = positive();     //call 1st function
+    int y1 = positive();      //call 1st function
+    int x2 = positive();      //call 1st function
+    int y2 = positive();      //call 1st function
 
-    float d = //call the 2nd function
+    float d = distance(x1, y1, x2, y2);           //call the 2nd function
 
     //call the 3rd function
-
+    print(x1,y1,x2,y2,d);
 
     return 0;
 }
