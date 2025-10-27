@@ -31,6 +31,9 @@ int main(){
     cout<<"\n------ EXERCISE -------"<<endl;
     int run1 = random_1_6();// call function that generates a number between 1 and 6
     int run2 = random_1_6();
+
+    cout<<"Die 1 rolled: "<<run1<<endl;
+    cout<<"Die 2 rolled: "<<run2<<endl;
     
 
     // call function to check for snake eye
