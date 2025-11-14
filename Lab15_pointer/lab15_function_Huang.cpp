@@ -120,32 +120,13 @@ void exercise(){
  
     //set maximum score
     int maxscore = scores[0];
-    for(int i = 0; i<sizenames; i++){
-        cout<<names[i]<<"\t";
-        //count how many names has 5+ characters
-        if (names[i].length() >= 5)
-            counter++;
 
-    for (int s = 0; s){}
-        if (scores[0]>scores[1]){
-        int maxscore = scores[1];
+    for (int s = 1; s <5; s++){
+        if(scores[s] > maxscore){
+            maxscore = scores[s];
+        }
     }
-        else if (scores[1]>scores[2]){
-            int maxscore = scores[2];
-        }
-        else if(scores[2]>scores[3]){
-            int maxscore = scores[3];
-        }
-        else if(scores[3]>scores[4]){
-            int maxscore = scores[4];
-        }
-        else if(scores[4]>scores[5]){
-            int maxscore = scores[5];
-        }
-        else{
-        }
-    
-    }
-    cout<<"Max score is "<<maxscore<<endl;
+      
+    cout<<"The maximum score is "<<maxscore<<endl;
 
 }
