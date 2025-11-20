@@ -42,8 +42,27 @@ int main(){
     
     
     cout<<"\n ------- EXERCISE ---------"<<endl;
-    int arr_number[2][3];
-    int a = average(arr_number, 2, 3);
-    cout<<"Total average of 12 numbers are "<<a<<endl;
+    char again = 'y';
+    
+    while (again == 'y' || again == 'Y')
+    {
+    int arr_number[3][4];
+    populate(arr_number, 3, 4);
+
+    for (int row = 0; row <3; row++){
+        for (int col = 0; col <4; col++){
+            cout<<arr_number[row][col]<<"\t";
+        }
+        cout<<endl;
+    }
+
+    double a = average(arr_number, 2, 3);
+    cout<<"Total average of 12 numbers is "<<a<<endl;
+
+    cout<<"Another run? (Y or N): ";
+    cin>>again;
+    cout<<endl;
+    }
+
     return 0;
 }

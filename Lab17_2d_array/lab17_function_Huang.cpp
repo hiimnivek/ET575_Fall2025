@@ -6,6 +6,8 @@ Nov 19th, 2025
 
 #include<iostream>
 #include<cmath>
+#include<ctime>
+#include<cstdlib>
 using namespace std;
 
 //example 1: declaring a 2D array
@@ -77,22 +79,22 @@ int total_odd(int arr[][3], int rowsize, int colsize){
 }
 
 //EXERCISE
-void populate(int arr[2][3], int rowsize, int colsize){
+void populate(int arr[][4], int rowsize, int colsize){
     for(int row = 0; row<rowsize; row++){
         for(int col = 0; col<colsize; col++){
 
-            arr[row][col] = 1 + rand()%100;
+            arr[row][col] =  rand()%101;
         }
     }
 }
 
-int average(int arr[2][3], int rowsize, int colsize){
+double average(int arr[][4], int rowsize, int colsize){
     int sum = 0;
     for(int row = 0; row<rowsize; row++){
         for(int col = 0; col<colsize; col++){
         sum += arr[row][col];
         }
     }
-    int totalaverage = sum/12;
-    return totalaverage;
+    int totalaverage = rowsize * colsize;
+    return sum/totalaverage;
 }
