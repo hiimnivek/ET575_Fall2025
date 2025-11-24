@@ -24,5 +24,8 @@ int main(){
 
     cout<<"\n------- Example 5: append data into a file -------"<<endl;
     appendfile("samplefile.txt");
+
+    cout<<"\n------- EXERCISE -------"<<endl;
+    writefile1("data_user.txt"); appendfile1("data_user.txt");readfile1("data_user.txt");
     return 0;
 }

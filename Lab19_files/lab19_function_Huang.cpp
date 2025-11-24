@@ -99,3 +99,43 @@ void appendfile(string filename){
     //close file
     fout.close();
 }
+
+//EXERCISE
+void writefile1(string filename){
+    fout.open(filename);
+
+    cout<<"This is my output file - Kevin Huang.\n"<<endl;
+
+    fout.close();
+}
+
+void appendfile1(string filename){
+    fout.open(filename, ios::app);
+
+    //append
+    fout<<"\n ------- APPEND --------"<<endl;
+
+    //write a single line
+    fout<<"This is my output file - Kevin Huang.\n"<<endl;
+    
+    //close file
+    fout.close();
+
+}
+
+void readfile1(string filename){
+    fin.open(filename);
+
+    //variable 'line' is used to store each line of samplefile.txt
+    string line1;
+
+    // loop through each line in samplefile.txt
+    int linecounter = 1;
+    while(getline(fin,line1)){
+    cout<<"Line "<<linecounter<<"\t"<<line1<<endl;
+    linecounter ++;
+    }
+
+    //close file
+    fin.close();
+}
