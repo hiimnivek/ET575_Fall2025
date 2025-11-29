@@ -104,7 +104,7 @@ void appendfile(string filename){
 void writefile1(string filename){
     fout.open(filename);
 
-    cout<<"This is my output file - Kevin Huang.\n"<<endl;
+    fout<<"This is my output file - Kevin Huang.\n"<<endl;
 
     fout.close();
 }
