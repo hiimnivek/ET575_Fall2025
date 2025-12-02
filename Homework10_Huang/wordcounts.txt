@@ -1,0 +1,5 @@
+Kevin Huang
+
+Total number of words: 209
+
+The word 'Earth' appears 2times in the document.
